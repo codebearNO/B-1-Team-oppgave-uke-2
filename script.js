@@ -34,12 +34,10 @@ let strengths = [
 function makeContainers(n) {
 	for (let i = 0; i < n; i++) {
 		document.getElementById("itemBox").innerHTML += /*HTML*/ `
-    
     <div onclick="addToInventory(this)" class="container">
     <img  src="images/${strengths[i]}.png" />
     ${strengths[i]}
     </div>
-    
     `;
 	}
 }
@@ -49,8 +47,6 @@ function addToInventory(thisElement) {
 	innerInventory.innerHTML += /*HTML*/ `
 	${thisElement.innerHTML}
 	`;
-	// thisElement.classList.toggle("frame");
-
 	console.log(innerInventory);
 	console.log(thisElement);
 }

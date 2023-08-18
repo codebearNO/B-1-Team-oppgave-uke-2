@@ -30,6 +30,7 @@
 #innerInventory {
   height: auto;
   grid-area: inventory;
+  text-align: center;
   
 }
 
