@@ -1,0 +1,70 @@
+.box{
+  display: grid;
+  grid-template-columns: 20vh 80vh;
+  grid-template-rows: 70px repeat(5, auto);
+  height: 90vh;
+  width: 100vh;
+  grid-template-areas: 
+  "button img img img img"
+  "inventory img img img img"
+  "inventory img img img img"
+  "inventory img img img img"
+  "inventory img img img img"
+  "inventory img img img img";
+  border: none;
+}
+
+#inventoryButton {
+  border: 1px solid black;
+  grid-area: button;
+  height: 200px;
+}
+
+#itemBox {
+  display: grid;
+  grid-template-columns: repeat(4,20vh);
+  width: 80vh;
+  grid-area: img;
+}
+
+#innerInventory {
+  height: auto;
+  grid-area: inventory;
+  
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(12, auto);
+  font-size: 13px;
+}
+
+.hidden {
+  display: none;
+}
+
+div {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  width: 100vh;
+}
+
+img {
+  width: 50%;
+}
+/* .frame{
+  border: 1px solid black;
+  width: 75px;
+} */
